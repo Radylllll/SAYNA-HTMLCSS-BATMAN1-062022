@@ -8,6 +8,10 @@
     --yellow-color: #FFFF00;
     --yellow-light: #f8f184;
     --blue-color: #19587d;
+    --white-color : #fff;
+    --gradient-white : #eddebf70;
+    --gradient-red : #890008;
+    --black-color : #000;
 }
 
 *{
@@ -30,8 +34,9 @@ h1{
 body {
     background-color: black;
     color: white;
-    font-family: 'Space-Grotesk';
-    font-weight: 300;
+    font-family: 'rajdhani';
+    font-weight: 400px;
+
 }
 /*Flexbox  s'applique sur l'element parrain */
 /*Design de la navigation*/
@@ -63,6 +68,103 @@ nav ul a:hover{
     background-image: url(../illustrations/Bathome1.png);
     height: 800px;
     background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+    background-size: cover;
 }
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 69%;
+    margin : 0 auto; /*pour centrer*/
+    padding-top: 150px;
+}
+
+#hero .titre{
+    margin: 20px 0;
+}
+
+.btn{
+    text-decoration: none; 
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 3px 20px;
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradient-red));
+    box-shadow: var(--black-color) 5px 5px 5px ;
+}
+ /*Design de la section Batman peresonnage*/
+
+ .batman-personnage{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+ }
+
+ .scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+ }
+
+ .scroll .social{
+    margin-top: 15px;
+ }
+
+ #batman-cinema, #batman-justice-league{ /*meme priorité donc assemblé*/
+    margin-top: 40px;
+ }
+
+ .batman-personnage{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ #batman-cinema .titre, #batman-justice-league .titre{ /*meme priorité donc assemblé*/
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0; /*30 px en haut et 0 à gauche et à droite*/
+ }
+
+ #batman-cinema .description, #batman-justice-league .description{ /*meme priorité donc assemblé*/
+    margin-bottom: 40px;
+    text-align: justify;
+ }
+
+
+/*Design de la partie multimédia*/
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;  
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%
+}
+
+#multimedia .slider-content{
+    padding: 15px;
+    background-color: #727272;
+}
+
+.slider-content p .yellow{
+    color: #FFFF00;
+}
+
+
+ 
+
+
 
 

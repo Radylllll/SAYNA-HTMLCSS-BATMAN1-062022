@@ -19,58 +19,70 @@
     </header>
 
     <main>
+        <!--les reseaux sociaux avec le scrolling-->
+        <div class="scroll">
+            <img src="./assets/logos/logo_bat_flèche.png" alt="">
+            <img class="soacial" src="./assets/logos/icon_facebook.png" alt="">
+            <img class="soacial" src="./assets/logos/icon_ig.png" alt="">
+            <img class="soacial" src="./assets/logos/icon_tw.png" alt="">
+            <img src="./assets/logos/logo_bat_flèche_2.png" alt="">
+        </div>
         <!---premiere section -->
         <section id="hero">
-            <div class="container">    
-                <p class="texte">>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les 
-                    criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
-                    <h2 class="titre">Il est Batman</h2>
-                <div class="cta">
-                    <a href="#">VOIR LE HERO</a>
-                    <a href="#"> ADVERSAIRES</a>
+            <div class="container">
+                <div class="content">    
+                    <p class="texte">Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les 
+                        criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
+                        <h2 class="titre">Il est Batman</h2>
+                    <div class="cta">
+                        <a class="btn" href="#batman-cinema">VOIR LE HERO</a>
+                        <a class="btn"  href="#"> ADVERSAIRES</a>
+                    </div>
                 </div>
             </div>
-            <img src="./assets/logos/flèche_down_header.png" alt="">
+            <img class="fleche" src="./assets/logos/flèche_down_header.png" alt="">
         </section>
         <!--deuxième section concernant Batman-->
-        <section>
-            <div>
-                <h1>Batman au cinéma</h1>
-                <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le 
+        <section id="batman-cinema">
+            <div class="container">
+                <h1 class="titre">Batman au cinéma</h1>
+                <p class="description">Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le 
                 dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le 
                 comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros 
                 majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 
                 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples 
                 acteurs d’interpréter l’homme chauve-souris. Voici les trois derniers :</p>
-                    <div>
+                <div class="batman-personnage">
+                    <div class="batman-item">
                         <img src="./assets/Illustrations/Bathome8.png" alt="">
                         <div>
                             <h3>Alfred Pennyworth - Michael Coin</h3>
                             <p>(2006 - 2008 - 2012) </p>
                         </div>
                     </div>
-                    <div>
+                    <div class="batman-item">
                         <img src="./assets/Illustrations/Bathome3.png" alt="">
                         <div>
                             <h3>Catwoman Zoé Kravitz</h3>
                             <p>(2022)</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="batman-item">
                         <img src="./assets/Illustrations/Bathome5.png" alt="">
                         <div>
                             <h3>James Gordon</h3>
                             <p>(2014 - 2019)</p>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
         <!--La section Némésis-->
         <!--La section Justice league-->
-        <section>
-            <div>
-                <h1> Justice League</h1>
-                <p>
+        <section id="batman-justice-league">
+            <div class="contaiiner">
+                <h1 class="titre"> Justice League</h1>
+                <p class="description">
                     Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils 
 doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne 
 sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de 
@@ -83,19 +95,20 @@ surnaturelles menacent son existence.
         </section>
 
         <!--La section Multimédia-->
-         <section>
-            <div>
-                <button>
+         <section id="multimedia">
+            <div class="container">
+                <button class="left">
                     <img src="./assets/Logos/icon_flèche_1.png" alt="">
                 </button>
-                <button>
+                <button class="right">
                     <img src="./assets/Logos/icon_flèche_2.png" alt="">
                 </button>
-                <div>
-                    <div>
+
+                <div class="slider-multimedia">
+                    <div class="slider-image">
                         <img src="./assets/Illustrations/Bathome_ba1.png" alt="">
                     </div>
-                    <div>
+                    <div class="slider-content">
                         <h2>ACTION, ADVENTURE</h2>
                         <h3>Batman Begins</h3>
                         <p>IMDB: <span class="yellow" >8.2</span></p>
@@ -108,8 +121,7 @@ surnaturelles menacent son existence.
                         </p>
                     </div>
                 </div>
-               
-                <div>
+                <div class="image-bande-annonce">
                     <img src="./assets/Illustrations/Bathome_ba2.png" alt="">
                 </div>
             </div>
